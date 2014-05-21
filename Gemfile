@@ -1,0 +1,7 @@
+source 'http://ruby.taobao.org'
+gem 'sinatra'
+gem 'sinatra-sse'
+gem 'redis'
+gem 'bootstrap-sass'
+gem 'thin'
+gem 'oj'
