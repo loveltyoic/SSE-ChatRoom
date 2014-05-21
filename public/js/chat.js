@@ -15,7 +15,7 @@ $(document).ready(function(){
   };
   source.onmessage = function(message) {
     console.log('SSE onmessage detected:');
-    $("#message-box").append('<p>'+message.data+'</p>');
+    $("#message-box ul").append('<li class="list-group-item">'+message.data+'</li>');
   }; 
 
   $("#submit").click(function(){

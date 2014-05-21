@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>  
-    <script src="chat.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/chat.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/chat.css" rel="stylesheet">
   </head>
   <body>
-    <textarea id="message"></textarea>
-    <button id="submit">Send</button>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Let's Chat!</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-md-4 col-md-offset-2">
+        <textarea class="form-control" rows="3" id="message"></textarea>
+        <button id="submit" class="btn btn-block btn-primary">Send</button>
+      </div>
 
-    <div id="message-box">
+      <div id="message-box" class="col-md-4">
+        <ul class="list-group">
+        </ul>
+      </div>
     </div>
   </body>
 </html>
