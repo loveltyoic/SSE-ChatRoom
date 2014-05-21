@@ -1,4 +1,15 @@
 #message-box {
   height: 500px;
   overflow: auto;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #fff;
+  border-width: 1px;
+  border-color: #ddd;
+  border-radius: 4px 4px 0 0;
+  box-shadow: none;
+}
+
+#message {
+  margin-bottom: 20px;
 }

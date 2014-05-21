@@ -15,8 +15,14 @@ $(document).ready(function(){
   };
   source.onmessage = function(message) {
     console.log('SSE onmessage detected:');
-    $("#message-box ul").append('<li class="list-group-item">'+message.data+'</li>');
+    $("#message-box ul").prepend(template(message.data));
   }; 
+
+  var template = function(message) {
+    var date = new Date();
+    var time = date.toLocaleString(); 
+    return '<li class="media"><div class="media-body"><h4 class="media-heading">'+time+'</h4>'+message+'</div></li>';
+  }
 
   $("#submit").click(function(){
     $.post('/room/1/message', {message: $("#message").val()}, function(){
